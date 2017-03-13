@@ -5,31 +5,24 @@
 		<script src = "../js/angular.js"></script>
 		<script src = "../src/login.js"></script>
 	</head>
-	<body ng-app = "myModule">
-		<div ng-controller = "login">
+	<body >
+		<div ng-app = "myModule" ng-controller = "login">
 			<table>
 				<tr>
-					<td>
-						Username : 
-					</td>
-					<td>
-						<input type="text" name="username" ng-model="login_params.username">
-					</td>
+					<td>Username : </td>
+					<td><input type="text" name="username" ng-model="login_params.username"></td>
 				</tr>
 				<tr>
-					<td>
-						Password : 
-					</td>
-					<td>
-						<input type="text" name="password" ng-model="login_params.password">
-					</td>
+					<td>Password : </td>
+					<td><input type="text" name="password" ng-model="login_params.password"></td>
 				</tr>
 				<tr align="center">
-					<td>
-						<input type="button" value="Enter" ng-click="enter_login(login_params)">
-					</td>
+					<td><input type="button" value="Enter" ng-click="enter_login(login_params)"></td>
 				</tr>				
 			</table>
+		</div>
+		<div ng-app = "module1" ng-controller = "">
+			
 		</div>
 	</body>
 </html>
