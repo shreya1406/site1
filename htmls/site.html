@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>HELLO</title>
-		<script src = "../js/angular.js"></script>
-		<script src = "../src/site.js"></script>
-		
-	</head>
-	<body ng-app = "module1">
-		<div ng-controller = "site1">
-			{{alerting()}};
-		</div>
-	</body>
-</html>
+
+Hello {{loggedin_user | uppercase}}!
+
+<div ng-controller = "main_site">
+	<div> Number of Transactions :
+		<input type="text" placeholder="No.Transactions" ng-model="user_data.transactions">
+		<br>
+		Last Use Date:
+		<input type="text" placeholder="Date" ng-model="user_data.last_use_date">
+		<br>
+	</div>
+	<div>
+		<br>
+		<input type="button" value="Get Data" ng-click="get_user_data()">
+	</div>
+	<div>
+		<br>
+		<input type="button" value="Logout" ng-click="logout_user()">
+	</div>
+</div>
